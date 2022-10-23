@@ -1,6 +1,32 @@
 # s21_decimal
 Implementation of your own s21_decimal.h library in C.
 
+## Start program
+
+After cloning this repo, enter the following command in the s21_decimal directory:
+
+To create a library, test its functions and get a [gcovr](https://gcovr.com/en/stable/) html-report on the coverage of functions with tests:
+```sh
+make
+```
+
+For building the library *s21_decimal.a*:
+```sh
+make s21_decimal.a
+```
+
+For testing the functions:
+```sh
+make test
+```
+
+If you want to check the code using *cppcheck*, *leaks* or *valgrind*, use the command:
+```sh
+make check
+```
+
+>The commands assume that you have a gcc compiler and some utilities installed!
+
 ## Information
 
 The Decimal value type represents decimal numbers ranging from positive 79,228,162,514,264,337,593,543,950,335 to negative 79,228,162,514,264,337,593,543,950,335. The default value of a Decimal is 0. The Decimal value type is appropriate for financial calculations that require large numbers of significant integral and fractional digits and no round-off errors. The Decimal type does not eliminate the need for rounding. Rather, it minimizes errors due to rounding.
